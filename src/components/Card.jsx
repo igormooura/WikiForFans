@@ -1,15 +1,14 @@
 import React from 'react';
 
-const Card = ({show}) => {
+const Card = ({ show }) => {
   return (
     <div
       className={`max-w-[850px] mx-auto grid md:grid-cols-3 gap-6 p-4 transition-all duration-500 ease-in-out transform ${
-        show ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5 pointer-events-none'
+        show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
       }`}
     >
       <div className="w-full h-72 shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300 bg-white">
-        
-      <div className="w-full h-[200px] sm:h-[250px] bg-gray-200 rounded-lg mb-4 flex items-center justify-center">
+        <div className="w-full h-[200px] sm:h-[250px] bg-gray-200 rounded-lg mb-4 flex items-center justify-center">
           <span className="text-gray-500">futura imagem</span>
         </div>
 
@@ -21,12 +20,10 @@ const Card = ({show}) => {
         <button className="mt-auto bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors duration-300">
           Learn More
         </button>
-        
       </div>
-
-      
     </div>
   );
 };
+
 
 export default Card;

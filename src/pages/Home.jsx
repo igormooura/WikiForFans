@@ -15,14 +15,14 @@ const Home = () => {
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div
-        className={`bg-white opacity-90 p-4 rounded-lg shadow-lg text-center transition-all duration-500 ease-in-out 
+        className={`bg-white opacity-90 p-4 rounded-lg shadow-lg text-center transition-all duration-500 ease-in-out
+          w-full max-w-xs sm:max-w-md md:max-w-md lg:max-w-xl
           ${
             showSearchBox
-              ? "translate-y-[300px] sm:translate-y-[50%] md:translate-y-[70%] lg:translate-y-[65%]"
-              : "translate-y-72"
-          } 
-          w-full max-w-xs sm:max-w-md md:max-w-md lg:max-w-xl 
-          `}  
+              ? "w-[500px] h-[200px] translate-y-[-70%]"
+              : "w-[400px]"
+          }
+        `}
       >
         <h1 className="text-2xl font-mono text-whitex mb-12">
           NFL/NBA WIKI FOR FANS
@@ -53,8 +53,15 @@ const Home = () => {
         </div>
       </div>
 
-          
-      <Card show={showSearchBox} />
+      <div
+        className={`w-full transition-all duration-500 ease-in-out ${
+          showSearchBox
+            ? "transform translate-y-[-50px]"
+            : "transform translate-y-0"
+        }`}
+      >
+        <Card show={showSearchBox} />
+      </div>
     </div>
   );
 };
