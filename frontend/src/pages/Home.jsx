@@ -24,10 +24,11 @@ const Home = () => {
           }
         `}
       >
-        <h1 className="text-2xl font-mono text-whitex mb-12">
+        <h1 className="text-2xl font-mono text-whitex mb-10">
           NFL/NBA WIKI FOR FANS
         </h1>
 
+        <h6 className="font-mono "> Made by Igor Moura</h6>
         <button
           className="bg-[#d1afaf] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3 relative z-10"
           onClick={toggleSearchBox}
