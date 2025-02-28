@@ -18,10 +18,11 @@ const Home = () => {
         className={`bg-white opacity-90 p-4 rounded-lg shadow-lg text-center transition-all duration-500 ease-in-out 
           ${
             showSearchBox
-              ? "translate-y-[-80px] sm:translate-y-[-20%] md:translate-y-[-20%] lg:translate-y-[-30%]"
-              : "translate-y-0"
+              ? "translate-y-[300px] sm:translate-y-[50%] md:translate-y-[70%] lg:translate-y-[65%]"
+              : "translate-y-72"
           } 
-          w-full max-w-xs sm:max-w-md md:max-w-md lg:max-w-xl`}
+          w-full max-w-xs sm:max-w-md md:max-w-md lg:max-w-xl 
+          `}  
       >
         <h1 className="text-2xl font-mono text-whitex mb-12">
           NFL/NBA WIKI FOR FANS
@@ -52,8 +53,8 @@ const Home = () => {
         </div>
       </div>
 
+          
       <Card show={showSearchBox} />
-
     </div>
   );
 };
