@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import backgroundImage from "../img/nfl.jpg";
+import Card from "../components/Card";
 
 const Home = () => {
   const [showSearchBox, setShowSearchBox] = useState(false);
@@ -14,9 +15,13 @@ const Home = () => {
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div
-        className={`bg-white opacity-90 p-8 rounded-lg shadow-lg text-center transition-all duration-500 ease-in-out 
-        ${showSearchBox ? "sm:w-[500px] sm:translate-x-[-100%]" : "sm:w-[400px]"} 
-        w-full max-w-xs sm:max-w-md md:max-w-md lg:max-w-xl`}
+        className={`bg-white opacity-90 p-4 rounded-lg shadow-lg text-center transition-all duration-500 ease-in-out 
+          ${
+            showSearchBox
+              ? "translate-y-[-80px] sm:translate-y-[-20%] md:translate-y-[-20%] lg:translate-y-[-30%]"
+              : "translate-y-0"
+          } 
+          w-full max-w-xs sm:max-w-md md:max-w-md lg:max-w-xl`}
       >
         <h1 className="text-2xl font-mono text-whitex mb-12">
           NFL/NBA WIKI FOR FANS
@@ -47,18 +52,8 @@ const Home = () => {
         </div>
       </div>
 
-      <div
-        className={`fixed top-1/2 right-10 w-[1000px] h-[700px] bg-white shadow-lg rounded-lg flex items-center justify-center transition-all duration-700 ease-in-out transform
-        ${showSearchBox ? "scale-100 opacity-90 pointer-events-auto" : "scale-0 opacity-0 pointer-events-none"}`}
-        style={{ transform: "translateY(-50%)" }}
-      >
-        <button
-          className="absolute top-4 right-4 text-black text-xl"
-          onClick={toggleSearchBox}
-        >
-          ✖
-        </button>
-      </div>
+      <Card show={showSearchBox} />
+
     </div>
   );
 };
