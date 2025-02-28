@@ -11,8 +11,8 @@ const Home = () => {
 
   return (
     <div
-      className="relative h-screen flex flex-col items-center justify-center bg-cover bg-center"
-      style={{ backgroundImage: `url(${backgroundImage})` }}
+      className="relative h-screen flex flex-col items-center justify-center bg-cover bg-center bg-black"
+    
     >
       <div
         className={`bg-white opacity-90 p-4 rounded-lg shadow-lg text-center transition-all duration-500 ease-in-out
