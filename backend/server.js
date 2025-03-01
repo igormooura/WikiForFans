@@ -7,6 +7,7 @@ const Players = [
     id: "1",
     name: "Patrick Mahomes",
     position: "QB",
+    photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGw5-jj3hghuUJs3vOQ7kPRD0upMcNYcwLEQ&s",
     team: {
       id: "KC",
       name: "Kansas City Chiefs"
@@ -25,6 +26,7 @@ const Players = [
     id: "2",
     name: "Deebo Samuel",
     position: "WR",
+    photo: "https://sportshub.cbsistatic.com/i/r/2024/11/21/8d7957b7-da0d-4c76-aa68-087ddfddddb7/thumbnail/770x433/1f46c73878f36884d54f0f3508a55867/deebo-samuel.jpg",
     team: {
       id: "SF",
       name: "San Francisco 49ers"
@@ -77,6 +79,7 @@ const typeDefs = `
     height: String
     weight: Int
     stats: Stats
+    photo: String
   }
 
   type Query {
