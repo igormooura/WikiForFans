@@ -28,7 +28,7 @@ const Card = ({ show, playerData }) => {
 
   return (
     <div
-      className={`max-w-[1200px] max-h-1 mx-auto grid md:grid-cols-4 gap-7 p-6 transition-all duration-500 ease-in-out transform ${
+      className={`max-w-[1200px] max-h-1 mx-auto my-auto grid lg:grid-cols-1 md:grid-cols-3  xl:grid-cols-4 sm:grid-cols-3 gap-7 p-6 transition-all duration-500 ease-in-out transform  ${
         show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
       }`}
     >
