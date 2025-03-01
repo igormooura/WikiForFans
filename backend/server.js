@@ -1,47 +1,6 @@
 import { ApolloServer } from "@apollo/server";
 import { startStandaloneServer } from "@apollo/server/standalone";
-
-
-const Players = [
-  {
-    id: "1",
-    name: "Patrick Mahomes",
-    position: "QB",
-    photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGw5-jj3hghuUJs3vOQ7kPRD0upMcNYcwLEQ&s",
-    team: {
-      id: "KC",
-      name: "Kansas City Chiefs"
-    },
-    number: 15,
-    age: 28,
-    height: "6'2\"",
-    weight: 225,
-    stats: {
-      gamesPlayed: 17,
-      touchdowns: 38,
-      yards: 5250
-    }
-  },
-  {
-    id: "2",
-    name: "Deebo Samuel",
-    position: "WR",
-    photo: "https://sportshub.cbsistatic.com/i/r/2024/11/21/8d7957b7-da0d-4c76-aa68-087ddfddddb7/thumbnail/770x433/1f46c73878f36884d54f0f3508a55867/deebo-samuel.jpg",
-    team: {
-      id: "SF",
-      name: "San Francisco 49ers"
-    },
-    number: 19,
-    age: 27,
-    height: "6'0\"",
-    weight: 215,
-    stats: {
-      gamesPlayed: 16,
-      touchdowns: 14,
-      yards: 1534
-    }
-  }
-];
+import  Players  from './assets/players.js'; 
 
 const typeDefs = `
   enum Position {
@@ -56,6 +15,9 @@ const typeDefs = `
     S
     K
     P
+    DE
+    DT
+    FS
   }
 
   type Team {
