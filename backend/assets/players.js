@@ -3,7 +3,7 @@ const Players = [
       id: "1",
       name: "Patrick Mahomes",
       position: "QB",
-      photo: "https://www.foxnews.com/sports/chiefs-patrick-mahomes-revenge-tour-after-losing-super-bowl-lix-teammate-says",
+      photo: "https://www.mensjournal.com/.image/t_share/MjEyNjI1MTkzNjE5Njk1MjMy/patrick-mahomes.png",
       team: {
         id: "KC",
         name: "Kansas City Chiefs"
@@ -22,7 +22,7 @@ const Players = [
       id: "2",
       name: "Deebo Samuel",
       position: "WR",
-      photo: "https://nypost.com/2022/07/31/49ers-deebo-samuel-agrees-to-three-year-73-5-million-extension/",
+      photo: "https://playmakerbrasil.com.br/wp-content/uploads/2025/03/deebo-samuels-four-word-message-immediately-after-49ers-commanders-trade.jpg",
       team: {
         id: "SF",
         name: "San Francisco 49ers"
@@ -41,7 +41,7 @@ const Players = [
       id: "3",
       name: "Josh Allen",
       position: "QB",
-      photo: "https://sportsjone.com/josh-allen-will-play-this-weekend-playing-update/",
+      photo: "https://images.squarespace-cdn.com/content/v1/644aee0dacaa0370337e0c7c/3592c59b-7df1-491c-ab7f-ca30e0746181/Josh+Allen+Final+Bio.png",
       team: {
         id: "BUF",
         name: "Buffalo Bills"
@@ -60,7 +60,7 @@ const Players = [
       id: "4",
       name: "Joe Burrow",
       position: "QB",
-      photo: "https://www.sportscasting.com/news/joe-burrow-started-updating-resume-before-stardom-at-lsu/",
+      photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSeaULXVmogjw6L8PXNEw6WKo0aOcwNOfReg&s",
       team: {
         id: "CIN",
         name: "Cincinnati Bengals"
@@ -79,7 +79,7 @@ const Players = [
       id: "5",
       name: "Lamar Jackson",
       position: "QB",
-      photo: "https://www.givemesport.com/88018217-lamar-jackson-ravens-qb-shows-off-incredible-arm-strength-in-viral-video/",
+      photo: "https://i.guim.co.uk/img/media/472006b3deec24b597f957f18ed164196920de6b/0_23_2912_1748/master/2912.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=2dbc5d31f8ab0f20ba44fe95d87891ce",
       team: {
         id: "BAL",
         name: "Baltimore Ravens"
@@ -98,7 +98,7 @@ const Players = [
       id: "6",
       name: "Jahmyr Gibbs",
       position: "RB",
-      photo: "https://www.mlive.com/sports/2024/12/jahmyr-gibbs-named-to-pro-bowl-as-rookie.html",
+      photo: "https://s.yimg.com/ny/api/res/1.2/fXx4kH677vtBk6OLB2HDNg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyNDI7aD04Mjg-/https://media.zenfs.com/en/afrotech_articles_589/2851b666e0a2cae7c270fc3acd6ff9ec",
       team: {
         id: "DET",
         name: "Detroit Lions"
@@ -117,7 +117,7 @@ const Players = [
       id: "7",
       name: "J.K. Dobbins",
       position: "RB",
-      photo: "https://www.baltimoresun.com/sports/ravens/bs-sp-ravens-jk-dobbins-pro-bowl-20250102-20250102-7b2p5h3x4zau5g7s3o2j7z5p7i-story.html",
+      photo: "https://theplayoffs.news/wp-content/uploads/2024/11/jk-dobbins-la-chargers-1.jpeg",
       team: {
         id: "BAL",
         name: "Baltimore Ravens"
@@ -130,25 +130,6 @@ const Players = [
         gamesPlayed: 15,
         touchdowns: 8,
         yards: 1100
-      }
-    },
-    {
-      id: "5",
-      name: "Lamar Jackson",
-      position: "QB",
-      photo: "https://www.givemesport.com/88018217-lamar-jackson-ravens-qb-shows-off-incredible-arm-strength-in-viral-video/",
-      team: {
-        id: "BAL",
-        name: "Baltimore Ravens"
-      },
-      number: 8,
-      age: 28,
-      height: "6'2\"",
-      weight: 212,
-      stats: {
-        gamesPlayed: 17,
-        touchdowns: 30,
-        yards: 3800
       }
     },
     {
