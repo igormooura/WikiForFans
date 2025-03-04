@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { useQuery, gql } from "@apollo/client";
+import InfoCard from "./InfoCard";
 
 const GET_PLAYERS = gql`
   query GetAllPlayers {
@@ -14,8 +15,14 @@ const GET_PLAYERS = gql`
   }
 `;
 
-const Card = ({ show, playerData }) => {
-  const { data: getPlayersData, error: getPlayersError, loading: getPlayersLoading } = useQuery(GET_PLAYERS);
+const Card = ({ show, playerData, openInfoCard }) => {
+  const [selectedPlayer, setSelectedPlayer] = useState(null);
+
+  const {
+    data: getPlayersData,
+    error: getPlayersError,
+    loading: getPlayersLoading,
+  } = useQuery(GET_PLAYERS);
 
   if (getPlayersLoading) return <p>Loading...</p>;
   if (getPlayersError) return <p>{getPlayersError.message}</p>;
@@ -25,6 +32,14 @@ const Card = ({ show, playerData }) => {
   if (!playersToDisplay || playersToDisplay.length === 0) {
     return <p>No players found.</p>;
   }
+
+  const handleOpenInfoCard = (player) => {
+    setSelectedPlayer(player);
+  };
+
+  const handleCloseInfoCard = () => {
+    setSelectedPlayer(null);
+  };
 
   return (
     <div
@@ -51,11 +66,18 @@ const Card = ({ show, playerData }) => {
           <p className="text-gray-600">Age: {player.age}</p>
           <p className="text-gray-600">Number: {player.number}</p>
 
-          <button className="mt-auto bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors duration-300">
+          <button
+            className="mt-auto bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors duration-300"
+            onClick={() => handleOpenInfoCard(player)}
+          >
             Learn More
           </button>
         </div>
       ))}
+
+      {selectedPlayer && (
+        <InfoCard player={selectedPlayer} onClose={handleCloseInfoCard} />
+      )}
     </div>
   );
 };
