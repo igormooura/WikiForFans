@@ -3,16 +3,27 @@ import { useQuery, gql } from "@apollo/client";
 import InfoCard from "./InfoCard";
 
 const GET_PLAYERS = gql`
-  query GetAllPlayers {
-    getAllPlayers {
-      name
-      height
-      age
-      number
-      position
-      photo
+query GetAllPlayers {
+  getAllPlayers {
+    age
+    height
+    id
+    name
+    number
+    photo
+    position
+    stats {
+      gamesPlayed
+      touchdowns
+      yards
     }
+    team {
+      id
+      name
+    }
+    weight
   }
+}
 `;
 
 const Card = ({ show, playerData, openInfoCard }) => {
