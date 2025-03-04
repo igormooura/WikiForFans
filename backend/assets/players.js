@@ -117,46 +117,7 @@ const Players = [
       id: "7",
       name: "J.K. Dobbins",
       position: "RB",
-      photo: "https://theplayoffs.news/wp-content/uploads/2024/11/jk-dobbins-la-chargers-1.jpeg",
-      team: {
-        id: "BAL",
-        name: "Baltimore Ravens"
-      },
-      number: 27,
-      age: 26,
-      height: "5'10\"",
-      weight: 219,
-      stats: {
-        gamesPlayed: 15,
-        touchdowns: 8,
-        yards: 1100
-      }
-    },
-    {
-      id: "6",
-      name: "Jahmyr Gibbs",
-      position: "RB",
-      photo: "https://www.mlive.com/sports/2024/12/jahmyr-gibbs-named-to-pro-bowl-as-rookie.html",
-      team: {
-        id: "DET",
-        name: "Detroit Lions"
-      },
-      number: 26,
-      age: 23,
-      height: "6'0\"",
-      weight: 200,
-      stats: {
-        gamesPlayed: 16,
-        touchdowns: 10,
-        yards: 1200
-      }
-    },
-
-    {
-      id: "7",
-      name: "J.K. Dobbins",
-      position: "RB",
-      photo: "https://www.baltimoresun.com/sports/ravens/bs-sp-ravens-jk-dobbins-pro-bowl-20250102-20250102-7b2p5h3x4zau5g7s3o2j7z5p7i-story.html",
+      photo: "https://s.yimg.com/ny/api/res/1.2/fXx4kH677vtBk6OLB2HDNg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyNDI7aD04Mjg-/https://media.zenfs.com/en/afrotech_articles_589/2851b666e0a2cae7c270fc3acd6ff9ec",
       team: {
         id: "BAL",
         name: "Baltimore Ravens"
