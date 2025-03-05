@@ -14,19 +14,30 @@ const Home = () => {
   const GET_PLAYER_BY_NAME = gql`
     query SearchPlayersByName($name: String!) {
       searchPlayersByName(name: $name) {
+        id
         name
         height
         age
         number
         position
         photo
+        stats {
+          gamesPlayed
+          touchdowns
+          yards
+        }
+        team {
+          id
+          name
+        }
+        weight
       }
     }
   `;
 
   const { data, error, loading, refetch } = useQuery(GET_PLAYER_BY_NAME, {
     variables: { name: searchPlayer },
-    skip: !searchClicked, 
+    skip: !searchClicked,
   });
 
   const handleSearchPlayer = async () => {
@@ -44,17 +55,25 @@ const Home = () => {
       <div
         className={`bg-white opacity-90 p-4 rounded-lg shadow-lg text-center transition-all duration-500 ease-in-out mt-40
           w-full max-w-xs sm:max-w-md md:max-w-md lg:max-w-xl
-          ${showSearchBox ? "w-[500px] h-[200px] translate-y-[-70%]" : "w-[400px]"}
+          ${
+            showSearchBox
+              ? "w-[500px] h-[200px] translate-y-[-70%]"
+              : "w-[400px]"
+          }
         `}
       >
-        <h1 className="text-2xl font-mono text-whitex mb-10">NFL/NBA WIKI FOR FANS</h1>
+        <h1 className="text-2xl font-mono text-whitex mb-10">
+          NFL/NBA WIKI FOR FANS
+        </h1>
         <h6 className="font-mono">Made by Igor Moura</h6>
 
         <button
           className="bg-[#d1afaf] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3 relative z-10"
           onClick={toggleSearchBox}
         >
-          <p className="font-bold">{showSearchBox ? "Close Search" : "Start Trial"}</p>
+          <p className="font-bold">
+            {showSearchBox ? "Close Search" : "Start Trial"}
+          </p>
         </button>
 
         <div
@@ -79,7 +98,9 @@ const Home = () => {
 
       <div
         className={`w-full transition-all duration-500 ease-in-out ${
-          showSearchBox ? "transform translate-y-[-25px]" : "transform translate-y-0"
+          showSearchBox
+            ? "transform translate-y-[-25px]"
+            : "transform translate-y-0"
         }`}
       >
         <Card show={showSearchBox} playerData={data?.searchPlayersByName} />

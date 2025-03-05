@@ -46,26 +46,22 @@ const typeDefs = `
 
   type Query {
     getAllPlayers: [Player!]!
-   
     searchPlayersByName(name: String!): [Player!]!
-
     filterPlayersByTeam(teamId: ID!): [Player!]!
   }
 `;
+
 const resolvers = {
   Query: {
     getAllPlayers: () => Players,
-
-    searchPlayersByName: (_, args) => 
+    searchPlayersByName: (_, { name }) => 
       Players.filter(player => 
-        player.name.toLowerCase().includes(args.name.toLowerCase())
+        player.name.toLowerCase().includes(name.toLowerCase())
       ),
-
-    filterPlayersByTeam: (_, args) => 
-      Players.filter(player => player.team.id === args.teamId)
+    filterPlayersByTeam: (_, { teamId }) => 
+      Players.filter(player => player.team.id === teamId)
   }
 };
-
 const server = new ApolloServer({ typeDefs, resolvers });
 
 const { url } = await startStandaloneServer(server, {
