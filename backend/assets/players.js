@@ -117,7 +117,7 @@ const Players = [
       id: "7",
       name: "J.K. Dobbins",
       position: "RB",
-      photo: "https://s.yimg.com/ny/api/res/1.2/fXx4kH677vtBk6OLB2HDNg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyNDI7aD04Mjg-/https://media.zenfs.com/en/afrotech_articles_589/2851b666e0a2cae7c270fc3acd6ff9ec",
+      photo: "https://ng-sportingnews.com/s3/files/styles/crop_style_16_9_desktop/s3/2024-09/USATSI_24190757.jpg?h=0fbd9ae9&itok=__s6HGn5",
       team: {
         id: "BAL",
         name: "Baltimore Ravens"
@@ -136,7 +136,7 @@ const Players = [
       id: "8",
       name: "Ja'Marr Chase",
       position: "WR",
-      photo: "https://www.si.com/nfl/bengals/news/jamarr-chase-makes-history-with-pro-bowl-selection",
+      photo: "https://images2.minutemediacdn.com/image/upload/c_crop,w_4086,h_2298,x_0,y_0/c_fill,w_912,ar_16:9,f_auto,q_auto,g_auto/images/ImagnImages/mmsport/si/01jk17gnpr28tjvss77g.jpg",
       team: {
         id: "CIN",
         name: "Cincinnati Bengals"
@@ -155,7 +155,7 @@ const Players = [
       id: "9",
       name: "Nico Collins",
       position: "WR",
-      photo: "https://www.houstonchronicle.com/texas-sports-nation/texans/article/texans-nico-collins-named-to-pro-bowl-2025-17677657.php",
+      photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4258173.png",
       team: {
         id: "HOU",
         name: "Houston Texans"
@@ -174,7 +174,7 @@ const Players = [
       id: "10",
       name: "Jerry Jeudy",
       position: "WR",
-      photo: "https://www.denverpost.com/2025/01/02/jerry-jeudy-pro-bowl-2025/",
+      photo: "https://sportshub.cbsistatic.com/i/r/2023/10/18/84fcedc1-61f1-4f9d-9307-5b3a4b30a017/thumbnail/770x433/72b88b681f56675969021bf8888d9890/jeudy.jpg",
       team: {
         id: "DEN",
         name: "Denver Broncos"
@@ -193,7 +193,7 @@ const Players = [
       id: "11",
       name: "Tyreek Hill",
       position: "WR",
-      photo: "https://www.miamidolphins.com/news/tyreek-hill-named-to-pro-bowl-2025",
+      photo: "https://www.reuters.com/resizer/v2/QOYJMFDUQ5PH3NA4BPPEVUOLD4.jpg?auth=2535051f1483cbda76f13c36b144f0a24f0d29d5130de1f4f9787aa18781b849&width=640&quality=80",
       team: {
         id: "MIA",
         name: "Miami Dolphins"
@@ -212,7 +212,7 @@ const Players = [
         id: "12",
         name: "Darren Waller",
         position: "TE",
-        photo: "https://www.nfl.com/_image/2025/01/02/24334125/0ap3000001098765.jpg",
+        photo: "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/rockcms/2024-06/240610-darren-waller-al-0715-8d1ddf.jpg",
         team: {
           id: "NYG",
           name: "New York Giants"
@@ -231,7 +231,7 @@ const Players = [
         id: "13",
         name: "Justin Jefferson",
         position: "WR",
-        photo: "https://www.nfl.com/_image/2025/01/02/24334125/0ap3000001098765.jpg",
+        photo: "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-1449858901.jpg?c=16x9&q=h_653,w_1160,c_fill/f_webp",
         team: {
           id: "MIN",
           name: "Minnesota Vikings"
@@ -250,7 +250,7 @@ const Players = [
         id: "14",
         name: "Terry McLaurin",
         position: "WR",
-        photo: "https://www.nfl.com/_image/2025/01/02/24334125/0ap3000001098765.jpg",
+        photo: "https://preview.redd.it/terry-mclaurin-appreciation-post-v0-xr9getuoov2e1.jpeg?auto=webp&s=4d1e8ee8e6663ba7e290adef20e563084ccdb43c",
         team: {
           id: "WAS",
           name: "Washington Commanders"
@@ -269,7 +269,7 @@ const Players = [
         id: "15",
         name: "CeeDee Lamb",
         position: "WR",
-        photo: "https://www.nfl.com/_image/2025/01/02/24334125/0ap3000001098765.jpg",
+        photo: "https://imageio.forbes.com/specials-images/imageserve/66e116c5f4e5065c3122d856/0x0.jpg?format=jpg&crop=1871,1053,x0,y44,safe&height=900&width=1600&fit=bounds",
         team: {
           id: "DAL",
           name: "Dallas Cowboys"
@@ -288,7 +288,7 @@ const Players = [
         id: "16",
         name: "Nick Bosa",
         position: "DE",
-        photo: "https://www.nfl.com/_image/2025/01/02/24334125/0ap3000001098765.jpg",
+        photo: "https://images.daznservices.com/di/library/DAZN_News/e1/3e/nick-bosa_1m8p0yxzbps6r1hrtipp47xpho.jpg?t=1820695117&w=800&quality=100",
         team: {
           id: "SF",
           name: "San Francisco 49ers"
@@ -307,7 +307,7 @@ const Players = [
         id: "17",
         name: "Vita Vea",
         position: "DT",
-        photo: "https://www.nfl.com/_image/2025/01/02/24334125/0ap3000001098765.jpg",
+        photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Vita_Vea_2021_%28cropped%29.jpg/220px-Vita_Vea_2021_%28cropped%29.jpg",
         team: {
           id: "TB",
           name: "Tampa Bay Buccaneers"
@@ -326,7 +326,7 @@ const Players = [
         id: "18",
         name: "Brian Branch",
         position: "S",
-        photo: "https://www.nfl.com/_image/2025/01/02/24334125/0ap3000001098765.jpg",
+        photo: "https://lionswire.usatoday.com/gcdn/authoring/images/smg/2025/02/22/SLIO/79647233007-52-88621.jpeg?width=660&height=440&fit=crop&format=pjpg&auto=webp",
         team: {
           id: "DET",
           name: "Detroit Lions"
@@ -345,7 +345,7 @@ const Players = [
         id: "19",
         name: "Jaycee Horn",
         position: "CB",
-        photo: "https://www.nfl.com/_image/2025/01/02/24334125/0ap3000001098765.jpg",
+        photo: "https://images2.minutemediacdn.com/image/upload/c_crop,w_1188,h_668,x_207,y_21/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/images/ImagnImages/mmsport/all_panthers/01jmjq6an20tjxspgy10.jpg",
         team: {
           id: "CAR",
           name: "Carolina Panthers"
@@ -364,7 +364,7 @@ const Players = [
         id: "20",
         name: "Devon Witherspoon",
         position: "CB",
-        photo: "https://www.nfl.com/_image/2025/01/02/24334125/0ap3000001098765.jpg",
+        photo: "https://sportshub.cbsistatic.com/i/r/2024/07/12/ccad8714-f282-48e1-a5e1-b564955d93ef/thumbnail/770x433/2cce8f8592ca589d6dddda025925aa9b/devon-witherspoon.jpg",
         team: {
           id: "SEA",
           name: "Seattle Seahawks"
@@ -383,7 +383,7 @@ const Players = [
         id: "21",
         name: "Xavier McKinney",
         position: "FS",
-        photo: "https://www.nfl.com/_image/2025/01/02/24334125/0ap3000001098765.jpg",
+        photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4241470.png&w=350&h=254",
         team: {
           id: "GB",
           name: "Green Bay Packers"
