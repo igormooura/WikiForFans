@@ -61,7 +61,7 @@ const Card = ({ show, playerData, openInfoCard }) => {
       {playersToDisplay.map((player, index) => (
         <div
           key={index}
-          className="w-full h-120 shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300 bg-white"
+          className="w-full h-120 shadow-lg shadow-white flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300 bg-white "
         >
           <div className="w-full h-[200px] sm:h-[200px] bg-gray-200 rounded-lg mb-4 flex items-center justify-center">
             <img

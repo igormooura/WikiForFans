@@ -46,12 +46,9 @@ const typeDefs = `
 
   type Query {
     getAllPlayers: [Player!]!
-    
-    getPlayerById(id: ID!): Player
-    getPlayerByNumber(number: Int!): Player
    
     searchPlayersByName(name: String!): [Player!]!
-    filterPlayersByPosition(position: Position!): [Player!]!
+
     filterPlayersByTeam(teamId: ID!): [Player!]!
   }
 `;
@@ -59,17 +56,10 @@ const resolvers = {
   Query: {
     getAllPlayers: () => Players,
 
-    getPlayerById: (_, args) => Players.find(player => player.id === args.id),
-
-    getPlayerByNumber: (_, args) => Players.find(player => player.number === args.number),
-
     searchPlayersByName: (_, args) => 
       Players.filter(player => 
         player.name.toLowerCase().includes(args.name.toLowerCase())
       ),
-
-    filterPlayersByPosition: (_, args) => 
-      Players.filter(player => player.position === args.position),
 
     filterPlayersByTeam: (_, args) => 
       Players.filter(player => player.team.id === args.teamId)
