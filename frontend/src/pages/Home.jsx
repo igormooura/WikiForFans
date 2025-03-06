@@ -68,10 +68,10 @@ const Home = () => {
         <h6 className="font-mono">Made by Igor Moura</h6>
 
         <button
-          className="bg-[#d1afaf] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3 relative z-10"
+          className="bg-[#921717] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3 relative z-10"
           onClick={toggleSearchBox}
         >
-          <p className="font-bold">
+          <p className=" text-white">
             {showSearchBox ? "Close Search" : "Start Trial"}
           </p>
         </button>
@@ -97,9 +97,9 @@ const Home = () => {
       </div>
 
       <div
-        className={`w-full transition-all duration-500 ease-in-out ${
+        className={`w-[90%] transition-all duration-500 ease-in-out ${
           showSearchBox
-            ? "transform translate-y-[-25px]"
+            ? "transform translate-y-[-10px]"
             : "transform translate-y-0"
         }`}
       >

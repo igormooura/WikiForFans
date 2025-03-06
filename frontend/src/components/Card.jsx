@@ -46,7 +46,7 @@ const Card = ({ show, playerData, openInfoCard }) => {
   if (!playersToDisplay?.length) return <p>No players found.</p>;
 
   return (
-    <div className={`max-w-[1200px] mx-auto grid lg:grid-cols-1 md:grid-cols-3 xl:grid-cols-4 sm:grid-cols-3 gap-7 p-6 transition-all duration-500 ease-in-out ${
+    <div className={`max-w-[1200px] mx-auto grid lg:grid-cols-1 md:grid-cols-3 xl:grid-cols-4 sm:grid-cols-3 gap-7 p-10 transition-all duration-500 ease-in-out ${
       show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
     }`}>
       {playersToDisplay.map((player) => (
