@@ -54,7 +54,7 @@ const Home = () => {
     <div className=" w-full flex flex-col items-center justify-center bg-black">
       <div
         className={`bg-white opacity-90 p-4 rounded-lg shadow-lg text-center transition-all duration-500 ease-in-out mt-40
-          w-full max-w-xs sm:max-w-md md:max-w-md lg:max-w-xl
+          w-full max-w-xs sm:max-w-md md:max-w-md lg:max-w-xl shadow-white
           ${
             showSearchBox
               ? "w-[500px] h-[200px] translate-y-[-70%]"

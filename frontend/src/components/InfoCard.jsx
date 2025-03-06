@@ -51,7 +51,7 @@ const InfoCard = ({ player, onClose }) => {
               <strong>Touchdowns:</strong> {player.stats?.touchdowns}
             </p>
             <p>
-              <strong>Yards:</strong> {player.stats?.yards}
+              <strong>Yards:</strong> {player.stats?.yards || "N/A"}
             </p>
           </div>
         </div>
