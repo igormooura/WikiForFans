@@ -5,7 +5,7 @@ import App from "./App";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 
 const client = new ApolloClient({
-  uri: "https://wiki-for-fans-server.vercel.app",
+  uri: "https://wiki-for-fans-server.vercel.app/graphql",
   cache: new InMemoryCache(),
 });
 
