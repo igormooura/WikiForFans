@@ -1,8 +1,14 @@
 {
-    "rewrites": [
-      { 
-        "source": "/(.*)", 
-        "destination": "/server.js" 
+    "routes": [
+      {
+        "src": "/graphql",
+        "dest": "/api/server.js",
+        "methods": ["GET", "POST", "OPTIONS"]
       }
-    ]
+    ],
+    "build": {
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
   }

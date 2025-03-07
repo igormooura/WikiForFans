@@ -3,7 +3,7 @@ import { ApolloServerPluginDrainHttpServer } from "apollo-server-core";
 import http from "http";
 import express from "express";
 import cors from "cors";
-import Players from './assets/players.js';
+import Players from '../assets/players.js';
 
 const app = express();
 app.use(cors());
@@ -73,18 +73,19 @@ const resolvers = {
   }
 };
 
-const startApolloServer = async (app, httpServer) => {
-  const server = new ApolloServer({
-    typeDefs,
-    resolvers,
-    plugins: [ApolloServerPluginDrainHttpServer({ httpServer })],
-  });
+const server = new ApolloServer({
+  typeDefs,
+  resolvers,
+  plugins: [ApolloServerPluginDrainHttpServer({ httpServer })],
+  introspection: true
+});
 
+const startServer = async () => {
   await server.start();
   server.applyMiddleware({ app });
-
-  await new Promise(resolve => httpServer.listen({ port: 4000 }, resolve));
-  console.log(`Server ready at http://localhost:4000${server.graphqlPath}`);
+  httpServer.listen(process.env.PORT || 4000);
 };
 
-startApolloServer(app, httpServer);
+startServer();
+
+export default app;
