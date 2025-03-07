@@ -71,7 +71,7 @@ const Home = () => {
           className="bg-[#921717] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3 relative z-10"
           onClick={toggleSearchBox}
         >
-          <p className=" text-white">
+          <p className=" text-white font-mono">
             {showSearchBox ? "Close Search" : "Start Trial"}
           </p>
         </button>
@@ -84,12 +84,12 @@ const Home = () => {
           <input
             type="text"
             placeholder="Search NFL characters..."
-            className="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-nxone focus:border-blue-500 mt-4"
+            className="w-full font-mono px-4 py-2 rounded-md border border-gray-300 focus:outline-nxone focus:border-blue-500 mt-4"
             onChange={(e) => setSearchPlayer(e.target.value)}
           />
           <button
             onClick={handleSearchPlayer}
-            className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
+            className="mt-4 font-mono bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
           >
             Search
           </button>

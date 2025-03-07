@@ -61,13 +61,13 @@ const Card = ({ show, playerData, openInfoCard }) => {
               className="w-full h-full object-cover rounded-lg"
             />
           </div>
-          <h2 className="text-lg font-bold mb-2">{player.name}</h2>
-          <p>Position: {player.position}</p>
-          <p>Height: {player.height}</p>
-          <p>Age: {player.age}</p>
-          <p>Number: {player.number}</p>
+          <h2 className="text-lg font-bold mb-2 font-mono">{player.name}</h2>
+          <p className="font-mono">Position: {player.position}</p>
+          <p className="font-mono">Height: {player.height}</p>
+          <p className="font-mono">Age: {player.age}</p>
+          <p className="font-mono">Number: {player.number}</p>
           <button
-            className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
+            className="mt-4 font-mono bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
             onClick={() => handleOpenInfoCard(player)}
           >
             Learn More
