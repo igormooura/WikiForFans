@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Card from "../components/Card";
 import { useQuery, gql } from "@apollo/client";
+import TitleBox from "../components/TitleBox";
+import SearchBox from "../components/SearchBox";
 
 const Home = () => {
   const [showSearchBox, setShowSearchBox] = useState(false);
@@ -51,7 +53,7 @@ const Home = () => {
   };
 
   return (
-    <div className=" w-full flex flex-col items-center justify-center bg-black">
+    <div className="w-full flex flex-col items-center justify-center bg-black">
       <div
         className={`bg-white opacity-90 p-4 rounded-lg shadow-lg text-center transition-all duration-500 ease-in-out mt-40
           w-full max-w-xs sm:max-w-md md:max-w-md lg:max-w-xl shadow-white
@@ -62,38 +64,17 @@ const Home = () => {
           }
         `}
       >
-        <h1 className="text-2xl font-mono text-whitex mb-10">
-          NFL/NBA WIKI FOR FANS
-        </h1>
-        <h6 className="font-mono">Made by Igor Moura</h6>
+        <TitleBox
+          showSearchBox={showSearchBox}
+          toggleSearchBox={toggleSearchBox}
+        />
 
-        <button
-          className="bg-[#921717] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3 relative z-10"
-          onClick={toggleSearchBox}
-        >
-          <p className=" text-white font-mono">
-            {showSearchBox ? "Close Search" : "Start Trial"}
-          </p>
-        </button>
-
-        <div
-          className={`overflow-hidden transition-all duration-500 ease-in-out ${
-            showSearchBox ? "max-h-[200px] opacity-100" : "max-h-0 opacity-0"
-          }`}
-        >
-          <input
-            type="text"
-            placeholder="Search NFL characters..."
-            className="w-full font-mono px-4 py-2 rounded-md border border-gray-300 focus:outline-nxone focus:border-blue-500 mt-4"
-            onChange={(e) => setSearchPlayer(e.target.value)}
-          />
-          <button
-            onClick={handleSearchPlayer}
-            className="mt-4 font-mono bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
-          >
-            Search
-          </button>
-        </div>
+        <SearchBox
+          showSearchBox={showSearchBox}
+          searchPlayer={searchPlayer}
+          setSearchPlayer={setSearchPlayer}
+          handleSearchPlayer={handleSearchPlayer}
+        />
       </div>
 
       <div
