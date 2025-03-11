@@ -1,6 +1,6 @@
 # NFL Wiki for Fans
 
-Welcome to the **NFL Wiki for Fans**! This project is a simple yet powerful web application that allows fans to search for their favorite NFL players, view their stats, and learn more about them.
+Welcome to the **NFL Wiki for Fans**! This project is a simple application that allows fans to search for their favorite NFL players, view their stats, and learn more about them.
 
 ## Technologies Used
 
